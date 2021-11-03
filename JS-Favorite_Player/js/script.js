@@ -96,7 +96,7 @@ function createCards() {
         //Create Text Content
         const content = document.createElement('p');
         content.classList.add("text-box");
-        content.textContent = `${arr[i].name} -- ${arr[i].content}`;
+        content.innerHTML = `${arr[i].name} <br>--<br> ${arr[i].content}`;
         //Create Image
         const imageBox = document.createElement("div");
         imageBox.classList.add("img-box");
